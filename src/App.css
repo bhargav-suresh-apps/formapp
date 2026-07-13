@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NameAge div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-content-contacts {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(5px);
+}
+.Questions label{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 8px;
 }
-
-.App-link {
-  color: #61dafb;
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.previous button {
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+.next-submit button {
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: 0 auto;
 }
